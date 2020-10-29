@@ -1,0 +1,38 @@
+.btn-login{
+    color:white;
+    
+}
+footer{
+    padding: 10px 20px 0 20px;
+    background-color: #ee695f;
+    
+    margin-bottom: 0px;
+    margin-top: 10p;
+}
+.link{
+    color: black;
+}
+address{
+    text-align: end;
+}
+.carousel{
+    width:60%;
+  height:60%;
+  margin: auto;
+  margin-bottom: 4%
+;}
+.jumbotronLogin{
+    width: 80%;
+    height: 60%;
+    margin: auto;
+     margin-top: 8%;
+    /*margin-bottom: 8% */
+}
+/* .form-control{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+} */
+.botonesLogin{
+    margin: auto;
+text-align: center!important;}
