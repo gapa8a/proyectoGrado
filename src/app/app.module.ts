@@ -9,36 +9,36 @@ import { CarouselModule, WavesModule } from 'angular-bootstrap-md';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouterModule,Routes } from '@angular/router';
-import { LoginModule } from './login/login.module';
 import { LoginComponent } from './login/login.component';
 
 
-const routes: Routes = [
-  {
-    path : 'login',
-    component : LoginComponent
-  }
+// const routes: Routes = [
+//   {
+//     path : 'login',
+//     component : LoginComponent
+//   }
 
-];
+// ];
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     MDBBootstrapModule.forRoot(),
-    LoginModule,
-    RouterModule.forRoot(routes)
+    // LoginModule,
+    // RouterModule.forRoot(routes)
 
 
 
     
     
-
+ 
   ],
   providers: [],
   bootstrap: [AppComponent]
