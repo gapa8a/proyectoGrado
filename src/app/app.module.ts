@@ -10,21 +10,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouterModule,Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
+import { ForgotComponent } from './forgot/forgot.component';
+import { RegisterComponent } from './register/register.component';
+import { IndexComponent } from './index/index.component';
 
 
-// const routes: Routes = [
-//   {
-//     path : 'login',
-//     component : LoginComponent
-//   }
+const routes: Routes = [
+  {  path : '', redirectTo :'/index', pathMatch:'full' },
+  {  path : 'index', component:AppComponent  },
+  {  path : 'index/login', component:LoginComponent  },
 
-// ];
+];
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    ForgotComponent,
+    RegisterComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +37,7 @@ import { LoginComponent } from './login/login.component';
     FormsModule,
     MDBBootstrapModule.forRoot(),
     // LoginModule,
-    // RouterModule.forRoot(routes)
+     RouterModule.forRoot(routes)
 
 
 
