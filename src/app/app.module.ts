@@ -17,16 +17,17 @@ import { IndexComponent } from './index/index.component';
 
 const routes: Routes = [
   {  path : '', redirectTo :'/index', pathMatch:'full' },
-  {  path : 'index', component:AppComponent  },
-  {  path : 'index/login', component:LoginComponent  },
-
+  {  path : 'index', component:IndexComponent },
+  {  path : 'login', component:LoginComponent  },
+  {  path : 'register', component:RegisterComponent },
+  {  path : 'forgot', component:ForgotComponent  }
 ];
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
+   // LoginComponent,
     ForgotComponent,
     RegisterComponent,
     IndexComponent
@@ -36,7 +37,7 @@ const routes: Routes = [
     AppRoutingModule,
     FormsModule,
     MDBBootstrapModule.forRoot(),
-    // LoginModule,
+    // LoginComponent,
      RouterModule.forRoot(routes)
 
 

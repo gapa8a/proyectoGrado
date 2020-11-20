@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" > -->
      <!-- <link rel="stylesheet" href="css/main.css"> -->
-     <link rel="stylesheet" [href]="sanitizer.bypassSecurityTrustResourceUrl(cssUrl)">
+     <!-- <link rel="stylesheet" [href]="sanitizer.bypassSecurityTrustResourceUrl(cssUrl)"> -->
     <!-- <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css"> -->
 
     <title>Inicio</title>
@@ -23,7 +23,7 @@
     
       <p>A continuación, inicia sesión para ingresar a los cursos ofertados.</p>
       <p class="lead">
-        <a class="btn btn-primary" href="login/login.component.html" role="button"><span class="oi oi-plus" style="color:black"></span>Iniciar Sesión</a>
+        <button class="btn btn-primary" type="button" [routerLink] ="['/login']" >Iniciar Sesión</button>
       </p>
 
         
@@ -41,7 +41,7 @@
           <li class ="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>  -->
          
         </ul>
-        <a class=" btn  btn-primary btn-login" [routerLink] ="[inicio/login]" >Iniciar Sesión</a>
+        <a class=" btn  btn-primary btn-login" [routerLink] ="['/login']" >Iniciar Sesión</a>
 
         </div>
       
